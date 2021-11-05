@@ -63,5 +63,3 @@ int main()
     count2++;
     printf("%d",count2);
 }
-
-
