@@ -1,0 +1,88 @@
+#include<stdio.h>
+int main()
+{
+    int year,month,day,n;
+    printf("Please input year,month,day\n");
+    scanf("%d %d %d",&year,&month,&day);
+    if(month==1)
+    {
+        n=day;
+    }
+    if(month==2)
+    {
+        n=31+day;
+    }
+    if(month==3)
+    {
+        if(year%4==0&&year%100!=0||year%400==0)
+        n=day+60;
+        else
+        n=day+59;
+    }
+    if(month==4)
+    {
+        if(year%4==0&&year%100!=0||year%400==0)
+        n=day+91;
+        else
+        n=day+90;
+    }
+    if(month==5)
+    {
+        if(year%4==0&&year%100!=0||year%400==0)
+        n=day+121;
+        else     
+        n=day+120;
+    }
+    if(month==6)
+    {
+        if(year%4==0&&year%100!=0||year%400==0)
+        n=day+152;
+        else
+        n=day+151;
+    }
+    if(month==7)
+    {
+        if(year%4==0&&year%100!=0||year%400==0)
+        n=day+182;
+        else
+        n=day+181;
+    }
+    if(month==8)
+    {
+        if(year%4==0&&year%100!=0||year%400==0)
+        n=day+213;
+        else
+        n=day+212;
+    }
+    if(month==9)
+    {
+        if(year%4==0&&year%100!=0||year%400==0)
+        n=day+244;
+        else
+        n=day+243;
+    }
+    if(month==10)
+    {
+        if(year%4==0&&year%100!=0||year%400==0)
+        n=day+274;
+        else
+        n=day+273;
+    }
+    if(month==11)
+    {
+        if(year%4==0&&year%100!=0||year%400==0)
+        n=day+305;
+        else
+        n=day+304;
+    }
+    if(month==12)
+    {
+        if(year%4==0&&year%100!=0||year%400==0)
+        n=day+335;
+        else
+        n=day+334;
+    }
+
+    printf("It is the %dth day.",n);
+
+}
