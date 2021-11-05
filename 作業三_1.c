@@ -2,27 +2,14 @@
 int main()
 {   
     int i,j,n;
-    int count=0,count1,count2,countn;
+    int count,count1=0,count2=0,countn,count3;
     scanf("%d %d",&i,&j);
-    if(i<j)
-    {
-        countn=j-i+1;
-    }
-    if(j<i)
-    {
-        countn=i-j+1;
-    }
-    while(countn!=0)
-    {
-        if(i>j)
-        {
             while(j<=i)
             {
                 n=j;
-                count=0;
+                count=0;  
                 while(n!=1)
-                {  
-                    count++;          
+                {            
                     if(n%2==0)
                     {
                     n=n/2;
@@ -31,19 +18,26 @@ int main()
                     {
                     n=3*n+1; 
                     }
-                                    
+                    count++;                  
+                }
+                j++;
+                count3=count1;
+                count1=count;
+                if(count3>count1&&count3>count2)
+                {
+                    count2=count3;
+                }
+                if(count1>count2)
+                {
+                    count2=count1;
                 }
             }
-        }
-        else
-        {
             while(i<=j)
             {
                 n=i;
-                count=0;
+                count=0;               
                 while(n!=1)
-                {
-                    count++;          
+                {         
                     if(n%2==0)
                     {
                     n=n/2;
@@ -51,24 +45,23 @@ int main()
                     else
                     {
                     n=3*n+1; 
-                    }                    
+                    }
+                    count++;                    
+                }  
+                i++;
+                count3=count1;
+                count1=count;
+                if(count3>count1&&count3>count2)
+                {
+                    count2=count3;
+                }
+                if(count1>count2)
+                {
+                    count2=count1;
                 }
             }
-        }
-        i++;
-        count++;
-        count1=count;
-          
-        if(count1>count)
-        {
-        count2=count1;
-        }
-        else
-        {
-        count2=count;
-        }
-        countn--;
-    }
+    count2++;
+    printf("%d",count2);
 }
 
 
