@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include<time.h>
 
-int question(int);
 int main()
 {
     int i=0,c,x,n1,countT=0,countF=0;
@@ -71,8 +70,4 @@ int main()
         }
         system("pause");
     }
-}
-int question(int num)
-{
-
 }
