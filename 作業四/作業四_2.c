@@ -1,32 +1,27 @@
 #include<stdio.h>
-#include<stdlib.h>
 int main()
-{
-    int a = 0, b = 0, i = 2, n, count = 0;
+{    
+    int n,i,a=0,b=0,count=0;
+    printf("輸入一個整數:");
     scanf("%d",&n);
-     
-        for(i;i<n;i++)
+    for(i=2;i<=n;i++)
+    {
+        while(n!=1)
         {
-            while(n%i==0)
-            {
-                b=a;
-                a=n/i;
-                
-                
-                n=a;
-                
-                
+            if(n%i==0)
+            { 
+                n=n/i;
             }
-            
-            if(b%i==0)
+            else
+            break;
+            count++;
+            b=a;
+            a=i;
+            if(a==b)
             {
-                count++;
+                count--;
             }
         }
-        
-        
-        
-        
-    
-    printf("%d",count);
+    }    
+    printf("%d\n",count);
 }
