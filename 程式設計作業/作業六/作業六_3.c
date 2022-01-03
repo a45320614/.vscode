@@ -1,0 +1,70 @@
+#include<stdio.h>
+int main()
+{
+    int input[10],i=0,j=0,a=0,sort,n=0,b=0,mode[10]={0},Mode[10]={0},mode1,k=0,max=0;
+    float avg,sum,median;
+    do
+    {
+        scanf("%d",&input[i]);
+        n++;
+        i++;
+    }while(getchar()!='\n');
+    for(i=0;i<n;i++)
+    {
+        sum=input[i]+a;
+        a=sum;
+    }
+    avg=sum/n;
+    printf("%f\n",avg);
+    for(j=0;j<n;j++)
+    {
+        for(i=j;i<n;i++)
+        {
+            if(input[j]>input[i+1])
+            {
+                b=input[i+1];
+                input[i+1]=input[j];
+                input[j]=b;
+            }
+        }
+    }
+    if(n%2==0)
+        {
+            median=(input[n/2-1]+input[n/2])/2;
+        }
+        else
+        {
+            median=input[(n+1)/2-1];
+        }
+        printf("%f\n",median);
+    for(j=0;j<n;j++)
+    {
+        for(i=j;i<n;i++)
+        {
+            
+            if(input[j]==input[i+1])
+            {
+                mode[j]++;
+            }
+            
+            if(mode[j]>=max)
+            {
+                max=mode[j];
+                Mode[j]=max;
+            }
+        }
+        j+=mode[j];
+    } 
+    for(i=0;i<10;i++)
+    {
+    if(Mode[i]>0)
+    {
+        printf("%d ",input[i]);
+        mode1=1;
+    }
+    }
+    if(mode1!=1)
+    {
+        printf("-1");
+    }    
+}
