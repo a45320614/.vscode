@@ -1,42 +1,38 @@
 #include<stdio.h>
-
 int main()
 {
-    int n,h[60],sum=0,avg,a,count=0;
-        do
+    int i,n,a,count=0;
+    do
+    {
+    scanf("%d",&n);
+    int num[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&num[i]);
+    }
+    int sum=0;
+    for(i=0;i<n;i++)
+    {
+        sum=num[i]+sum;
+    }
+    int target=sum/n;
+    int move=0;
+    for(i=0;i<n;i++)
+    {
+        if(num[i]>target)
         {
-        scanf("%d",&n);
-
-        count++;
-
-        sum=0;
-        a=0;
-
-
-        for(int i=0;i<n;i++)
-        {
-          scanf("%d",&h[i]);
-          sum+=h[i];
-
+            a=num[i]-target;
+            move=a+move;
         }
-        avg=sum/n;
-
-        for(int j=0;j<n;j++)
+        else if(num[i]<target)
         {
-
-            if(h[j]>avg)
-            a=a+(h[j]-avg);
-            else if(h[j]<avg)
-            a=a+(avg-h[j]);
-
+            a=target-num[i];
+            move=a+move;
         }
-        a/=2;
-
-        printf("Set #%d\n",count);
-        printf("The minimum number of moves is %d\n",a);
-
-        }while(n<=10 || n!=0);
-
-    return 0;
-
+    }
+    move=move/2;
+    printf("Set #%d\n",count+1);
+    printf("The minimum number of moves is %d\n",move);
+    count++;
+    }while(n!=0||count==10);
 }
