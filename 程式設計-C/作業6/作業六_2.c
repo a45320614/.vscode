@@ -11,7 +11,7 @@ int testPalindrome(void)
     char arr[100];
     int i,n=0,y=0;
     gets(arr);
-    for(i=0;arr[i]!='\0';i++)
+    for(i=0;arr[i]!=0;i++)
     {
     }
     i--;
