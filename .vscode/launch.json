@@ -4,7 +4,20 @@
     // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "Launch HW2_2",
+            "request": "launch",
+            "mainClass": "HW2_2",
+            "projectName": ".vscode_a17bd626"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": ".vscode_a17bd626"
+        },
         {
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
