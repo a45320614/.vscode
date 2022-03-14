@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class C2_2{
+public class Ex2_2{
     public static void main(String [] args){
         Random r=new Random();
         Scanner input=new Scanner(System.in);

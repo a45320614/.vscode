@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class C2_1{
+public class Ex2_1{
 	public static void main(String [] args){
 	Scanner input=new Scanner(System.in);
     int vote=0,response,flag=0;
     int count1=0,count2=0,count3=0;
     while(flag!=-1){
-        System.out.print("票選最喜歡的台灣小吃：(1)臭豆腐(2)蚵ㄚ煎(3)滷味。請選擇:");
+        System.out.print("票選最喜歡的台灣小吃:(1)臭豆腐(2)蚵ㄚ煎(3)滷味。請選擇:");
         response=input.nextInt();
         flag=response;
         if(response==1){count1++;}
@@ -24,16 +24,16 @@ public class C2_1{
     if(count1>count2&&count1>count3){n=1;}
     else if(count2>count1&&count2>count3){n=2;}
     else if(count3>count2&&count3>count1){n=3;}
-    else {System.out.println("從缺");}
+    else {System.out.println("票選結果");}
     switch(n){
         case 1:
-            System.out.print("最高票為:臭豆腐");
+            System.out.print("得票率最高者:臭豆腐");
             break;
         case 2:
-            System.out.print("最高票為:蚵ㄚ煎");
+            System.out.print("得票率最高者:蚵ㄚ煎");
             break;
         case 3:
-            System.out.print("最高票為:滷味");
+            System.out.print("得票率最高者:滷味");
             break;
 	}
     
