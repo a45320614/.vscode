@@ -7,7 +7,7 @@ import java.util.Scanner;
        row = input.nextInt();
        for(int i=0; i<row; i++){
            for(int j=1;j<=row;j++){
-               System.out.print(j<=i?"":"*");
+               System.out.print(j<=i?" ":"*");
            }
         System.out.println();
 
