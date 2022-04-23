@@ -1,3 +1,4 @@
+package L01;
 public class HW1_1 {
     public static void main(String [] args){
         int i=0,n=0;

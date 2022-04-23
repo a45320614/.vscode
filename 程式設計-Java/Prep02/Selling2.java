@@ -1,3 +1,4 @@
+package Prep02;
 public class Selling2{
     public static void main(String [] args){
         Regular_Ticket r=new Regular_Ticket(100,0);

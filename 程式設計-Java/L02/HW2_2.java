@@ -1,3 +1,4 @@
+package L02;
 import java.util.Scanner;
 
 public class HW2_2 {

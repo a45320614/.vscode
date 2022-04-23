@@ -1,9 +1,10 @@
+package L03;
 import java.util.Scanner;
   public class Ex3_3{
     public static void main(String args[]){
        int row;
        Scanner input = new Scanner(System.in);
-       System.out.print("請問要印幾列的倒三角形星星?");
+       System.out.print("嚙請問要嚙盤嚙碼嚙瘠嚙踝蕭嚙誼三嚙踝蕭嚙諄星嚙瞑?");
        row = input.nextInt();
        for(int i=0; i<row; i++){
            for(int j=1;j<=row;j++){

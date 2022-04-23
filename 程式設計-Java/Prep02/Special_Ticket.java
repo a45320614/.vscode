@@ -1,3 +1,4 @@
+package Prep02;
 public class Special_Ticket {
     private int price;
     private int quantity;
@@ -15,6 +16,6 @@ public class Special_Ticket {
         quantity+=q;
     }
     public String toString(){
-        return ("Special ticket ²Ö­p¾P°âª÷ÃB¹F "+(price*quantity*discount)+"¤¸");
+        return ("Special ticket ï¿½Ö­pï¿½Pï¿½ï¿½ï¿½ï¿½Bï¿½F "+(price*quantity*discount)+"ï¿½ï¿½");
     }
 }

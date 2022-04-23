@@ -1,3 +1,4 @@
+package Prep02;
 public class Regular_Ticket {
     private int price;
     private int quantity;
@@ -14,6 +15,6 @@ public class Regular_Ticket {
         quantity+=q;
     }
     public String toString(){
-        return ("Regular ticket ²Ö­p¾P°âª÷ÃB¹F "+(price*quantity)+"¤¸");
+        return ("Regular ticket ï¿½Ö­pï¿½Pï¿½ï¿½ï¿½ï¿½Bï¿½F "+(price*quantity)+"ï¿½ï¿½");
     }
 }

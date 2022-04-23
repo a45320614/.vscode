@@ -1,3 +1,4 @@
+package L02;
 import java.util.Scanner;
 
 public class Ex2_1{
@@ -6,7 +7,7 @@ public class Ex2_1{
     int vote=0,response,flag=0;
     int count1=0,count2=0,count3=0;
     while(flag!=-1){
-        System.out.print("²¼¿ï³Ì³ßÅwªº¥xÆW¤p¦Y:(1)¯ä¨§»G(2)³H£«·Î(3)º±¨ý¡C½Ð¿ï¾Ü:");
+        System.out.print("ï¿½ï¿½ï¿½ï¿½Ì³ï¿½ï¿½wï¿½ï¿½ï¿½xï¿½Wï¿½pï¿½Y:(1)ï¿½ä¨§ï¿½G(2)ï¿½Hï¿½ï¿½ï¿½ï¿½(3)ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½Ð¿ï¿½ï¿½:");
         response=input.nextInt();
         flag=response;
         if(response==1){count1++;}
@@ -16,24 +17,24 @@ public class Ex2_1{
     }
     vote--;
     double pa1=(double)count1/vote,pa2=(double)count2/vote,pa3=(double)count3/vote;
-    System.out.print("²¼¿ïµ²ªG:\n");
-	System.out.printf("(1)¯ä¨§»G:%d ±o²¼²v:%.2f\n",count1,pa1);
-    System.out.printf("(2)³H£«·Î:%d ±o²¼²v:%.2f\n",count2,pa2);
-    System.out.printf("(3)º±¨ý:%d ±o²¼²v:%.2f\n",count3,pa3);
+    System.out.print("ï¿½ï¿½ï¿½ïµ²ï¿½G:\n");
+	System.out.printf("(1)ï¿½ä¨§ï¿½G:%d ï¿½oï¿½ï¿½ï¿½v:%.2f\n",count1,pa1);
+    System.out.printf("(2)ï¿½Hï¿½ï¿½ï¿½ï¿½:%d ï¿½oï¿½ï¿½ï¿½v:%.2f\n",count2,pa2);
+    System.out.printf("(3)ï¿½ï¿½ï¿½ï¿½:%d ï¿½oï¿½ï¿½ï¿½v:%.2f\n",count3,pa3);
     int n=0;
     if(count1>count2&&count1>count3){n=1;}
     else if(count2>count1&&count2>count3){n=2;}
     else if(count3>count2&&count3>count1){n=3;}
-    else {System.out.println("²¼¿ïµ²ªG");}
+    else {System.out.println("ï¿½ï¿½ï¿½ïµ²ï¿½G");}
     switch(n){
         case 1:
-            System.out.print("±o²¼²v³Ì°ªªÌ:¯ä¨§»G");
+            System.out.print("ï¿½oï¿½ï¿½ï¿½vï¿½Ì°ï¿½ï¿½ï¿½:ï¿½ä¨§ï¿½G");
             break;
         case 2:
-            System.out.print("±o²¼²v³Ì°ªªÌ:³H£«·Î");
+            System.out.print("ï¿½oï¿½ï¿½ï¿½vï¿½Ì°ï¿½ï¿½ï¿½:ï¿½Hï¿½ï¿½ï¿½ï¿½");
             break;
         case 3:
-            System.out.print("±o²¼²v³Ì°ªªÌ:º±¨ý");
+            System.out.print("ï¿½oï¿½ï¿½ï¿½vï¿½Ì°ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½");
             break;
 	}
     

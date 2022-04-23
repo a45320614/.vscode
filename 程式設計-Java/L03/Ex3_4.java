@@ -1,3 +1,4 @@
+package L03;
 import javax.swing.JOptionPane;
 import java.util.Random;
 

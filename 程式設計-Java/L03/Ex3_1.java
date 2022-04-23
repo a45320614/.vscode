@@ -1,3 +1,4 @@
+package L03;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -7,7 +8,7 @@ public class Ex3_1{
         Scanner s=new Scanner(System.in);
         int ans;
         int right=0,wrong=0;
-        System.out.println("¶}©l´úÅç!");
+        System.out.println("ï¿½}ï¿½lï¿½ï¿½ï¿½ï¿½!");
         for(int i=0;i<5;i++){
         int q1=r.nextInt(9)+1;
         int q2=r.nextInt(9)+1;
@@ -21,10 +22,10 @@ public class Ex3_1{
         }
         }
         if(right>=4){
-            System.out.print("¼Æ¾Ç¸êÀu¥Í!");
+            System.out.print("ï¿½Æ¾Ç¸ï¿½ï¿½uï¿½ï¿½!");
         }
         else{
-            System.out.print("­n¦A¥[ªo!");
+            System.out.print("ï¿½nï¿½Aï¿½[ï¿½o!");
         }
     }
 }

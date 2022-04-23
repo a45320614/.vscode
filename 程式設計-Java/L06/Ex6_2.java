@@ -1,3 +1,4 @@
+package L06;
 public class Ex6_2{
     public static void main(String [] args){
         Ex6_2_1 a1=new Ex6_2_1("John","001",100);

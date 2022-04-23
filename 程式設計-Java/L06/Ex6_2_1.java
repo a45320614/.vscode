@@ -1,3 +1,4 @@
+package L06;
 
 
 public class Ex6_2_1 {

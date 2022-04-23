@@ -1,8 +1,9 @@
+package L04;
 import javax.swing.JOptionPane;
 
 public class IC_4 {
     public static void main(String [] args){
-        int n=JOptionPane.showConfirmDialog(null,"¶}©lª±¤ôªG©ÔÅQ?");
+        int n=JOptionPane.showConfirmDialog(null,"ï¿½}ï¿½lï¿½ï¿½ï¿½ï¿½ï¿½Gï¿½ï¿½ï¿½Q?");
         System.out.printf("%d",n);
         if(n==0){
             Sp.spin();
